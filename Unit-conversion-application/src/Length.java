@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Length {
-    public void unitsPerTypes() {
+    public void unitsPerTypesLength() {
         Scanner sc = new Scanner(System.in);
         System.out.print("1 : Meter\n"
                 + "2 : Kilometer\n"

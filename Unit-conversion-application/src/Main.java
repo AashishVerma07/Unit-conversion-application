@@ -20,14 +20,16 @@ public class Main {
 
         if( unit == 1){
             System.out.println("Length");
-            l.unitsPerTypes();
+            l.unitsPerTypesLength();
         }
         else if( unit == 2){
             System.out.println("Height");
+//            h.unitsPerTypesHeight();
 
         }
         else if (unit == 3) {
             System.out.println("Temperature");
+            t.unitsPerTypesTemperature();
 
         }
         else if (unit ==4) {
