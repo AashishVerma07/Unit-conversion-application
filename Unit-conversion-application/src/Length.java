@@ -18,7 +18,7 @@ public class Length {
             long typeTo = sc.nextLong();
 
             if (typeTo == 1) {
-                System.out.printf("Meter to Meter : %.10f" , number);
+                System.out.print("Meter to Meter : " + number);
             } else if (typeTo == 2) {
                 double meterToKM = number * 0.001;
                 System.out.printf("Meter to KM : %.5f",  meterToKM);
@@ -41,7 +41,7 @@ public class Length {
                 double KMToM = number * 1000;
                 System.out.printf("KM to Meter : %.10f" , KMToM);
             } else if (typeTo == 2) {
-                System.out.printf("KM to KM : %.10f " , number);
+                System.out.print("KM to KM : " + number);
             } else if (typeTo == 3) {
                 double KMToCM = number * 100000;
                 System.out.printf("KM to CM : %.10f" , KMToCM);
@@ -64,7 +64,7 @@ public class Length {
                 double CMToKM = number * 0.00001;
                 System.out.printf("CM to KM : %.10f" , CMToKM);
             } else if (typeTo == 3) {
-                System.out.printf("CM to CM : %.10f" , number);
+                System.out.print("CM to CM : " + number);
             } else if (typeTo == 4) {
                 double CMToMM = number * 10;
                 System.out.printf("CM to MM : %.10f" , CMToMM);
@@ -87,7 +87,7 @@ public class Length {
                 double MMToCM = number * 0.1;
                 System.out.printf("MM to CM : %.10f" , MMToCM);
             } else if (typeTo == 4) {
-                System.out.printf("MM to MM : %.10f" , number);
+                System.out.print("MM to MM : " + number);
             } else if (typeTo == 5) {
                 double MMToMC = number * 1000;
                 System.out.printf("MM to MC : %.10f" , MMToMC);
@@ -110,7 +110,7 @@ public class Length {
                 double MCToMM = number * 0.001;
                 System.out.printf("MC to MM : %.10f" , MCToMM);
             } else if (typeTo == 5) {
-                System.out.printf("MC to MC : %.10f" , number);
+                System.out.print("MC to MC : " + number);
             }else{
                 System.out.println("Invalid Option!!!");
             }

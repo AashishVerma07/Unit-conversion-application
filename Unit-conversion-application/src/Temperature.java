@@ -16,7 +16,7 @@ public class Temperature {
             long typeTo = sc.nextLong();
 
             if (typeTo == 1) {
-                System.out.printf("Celsius to Celsius : %.10f", number);
+                System.out.print("Celsius to Celsius : " + number);
             } else if (typeTo == 2) {
                 double CtoK = number + 273.15;
                 System.out.printf("Celsius to Kelvin : %.5f", CtoK);
@@ -33,7 +33,7 @@ public class Temperature {
                 double KtoC = number - 273.15;
                 System.out.printf("Kelvin to Celsius : %.10f", KtoC);
             } else if (typeTo == 2) {
-                System.out.printf("Kelvin to Kelvin : %.10f ", number);
+                System.out.print("Kelvin to Kelvin : " + number);
             } else if (typeTo == 3) {
                 double KtoF = ((number - 273.15) * 1.8) + 32;
                 System.out.printf("Kelvin to Fahrenheit : %.10f", KtoF);
@@ -50,7 +50,7 @@ public class Temperature {
                 double FtoK =  ((number - 32) / 1.8) + 273.15;
                 System.out.printf("Fahrenheit to Kelvin : %.10f", FtoK);
             } else if (typeTo == 3) {
-                System.out.printf("Fahrenheit to Fahrenheit : %.10f", number);
+                System.out.print("Fahrenheit to Fahrenheit : " + number);
             } else {
                 System.out.println("Invalid Option!!!");
             }
