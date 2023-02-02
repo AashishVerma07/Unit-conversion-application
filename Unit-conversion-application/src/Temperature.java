@@ -13,12 +13,12 @@ public class Temperature {
 
         System.out.print("Source unit : ");
         int sourceUnit = sc.nextInt();
-        convertToBase(sourceUnit, convertNumber);
+        sourceToBase(sourceUnit, convertNumber);
 
     }
 
 
-    public static void convertToBase(int sourceUnit, double convertNumber) {
+    public static void sourceToBase(int sourceUnit, double convertNumber) {
 
         System.out.print("Enter the number : ");
         Scanner sc = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class Temperature {
             sc.nextLine();
 
         } else if (sourceUnit == 3) {
-            convertNumber =  ((number - 32) * 5) / 9;
+            convertNumber =  ((number - 32) * 1.8);
             System.out.println(convertNumber);
             sc.nextLine();
 
@@ -46,10 +46,10 @@ public class Temperature {
 
         System.out.print("Destination unit : ");
         long destinationUnit = sc.nextLong();
-        sourceToDestination(destinationUnit, convertNumber);
+        basToDestination(destinationUnit, convertNumber);
     }
 
-    public static void sourceToDestination(double destinationUnit, double convertNumber) {
+    public static void basToDestination(double destinationUnit, double convertNumber) {
 
         Scanner sc = new Scanner(System.in);
         double convertedValue = 0;
